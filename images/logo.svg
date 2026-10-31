@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">Ferrel Ng Portfolio logo</title>
+  <desc id="desc">Green FN monogram on a gray shield with magenta and red accents and a yellow star.</desc>
+  <!-- Grey background with magenta border -->
+  <rect x="4" y="4" width="112" height="112" rx="18" fill="#333333" stroke="#ff00ff" stroke-width="5"/>
+  <!-- Red underline -->
+  <path d="M25 92 H95" stroke="#ff3030" stroke-width="5" stroke-linecap="round"/>
+  <!-- Green initials -->
+  <text x="60" y="75" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="46" text-anchor="middle" fill="#00ff00">FN</text>
+  <!-- Yellow star -->
+  <path d="M92 13 L96 23 L107 23 L98 30 L101 41 L92 35 L83 41 L86 30 L77 23 L88 23 Z" fill="#ffff00"/>
+</svg>

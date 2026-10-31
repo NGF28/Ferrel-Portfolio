@@ -1,0 +1,250 @@
+
+/* General Style */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    line-height: 1.6;
+}
+
+.container,
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* Header */
+header {
+    background-color: #111111;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Header Title */
+header h1 {
+    background-color: #333333; /* Grey background */
+    color: #00ff00;            /* Green letters */
+    padding: 12px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+}
+
+/* Navigation - RED */
+nav {
+    background-color: #111111;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff7777;
+    text-decoration: underline;
+}
+
+/* Home */
+.hero {
+    background-color: #080808;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* GREEN - Entire name line */
+.hero h1 {
+    background-color: #333333; /* Grey background */
+    color: #00ff00;            /* Green letters */
+    font-size: 32px;
+    padding: 12px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.hero p {
+    color: white;
+}
+
+.hero .small {
+    color: white;
+    font-weight: bold;
+}
+
+/* Section Headings - RED */
+h2 {
+    color: #ff0000;
+    font-size: 28px;
+}
+
+h3 {
+    color: white;
+}
+
+/* About */
+#about {
+    background-color: black;
+}
+
+#about p {
+    color: white;
+}
+
+/* Skills */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.skill-list li {
+    background-color: #181818;
+    color: white;
+    border: 1px solid #555555;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Projects */
+.project {
+    background-color: #0b0b0b;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit, minmax(240px, 1fr)
+    );
+    gap: 20px;
+}
+
+.project-card,
+.extra-project {
+    background-color: #181818;
+    border: 1px solid #ff0000;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.project-card h3,
+.extra-project h3 {
+    color: white;
+}
+
+.tech {
+    color: white;
+    font-weight: bold;
+}
+
+/* All Buttons - MAGENTA */
+.button {
+    display: inline-block;
+    background-color: #ff00ff;
+    color: black;
+    text-decoration: none;
+    padding: 12px 20px;
+    border: 2px solid #ff00ff;
+    border-radius: 6px;
+    cursor: pointer;
+    font: inherit;
+    font-weight: bold;
+    margin: 10px 8px 10px 0;
+}
+
+.button:hover {
+    background-color: #ff66ff;
+    border-color: #ff66ff;
+    color: black;
+}
+
+.button-outline {
+    background-color: #ff00ff;
+    color: black;
+}
+
+/* Contact */
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    color: white;
+}
+
+/* Footer - YELLOW */
+footer {
+    background-color: #111111;
+    color: #ffff00;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #ffff00;
+}
+
+/* Accessibility */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 4px;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .container,
+    .section {
+        padding: 25px 15px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto 15px;
+}
